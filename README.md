@@ -10,3 +10,12 @@ Summarize blocks of text using Summarizer to extract the most important and cent
 <li>Use Sentiment Analysis to identify the sentiment of a string of text, from very negative to neutral to very positive.</li>
 <li>Reduce words to their root, or stem, using PorterStemmer, or break up text into tokens using Tokenizer.
 </li>
+
+<h1>Common NLP tasks in software programs today include:</h1>
+
+<ul>
+Sentence segmentation, part-of-speech tagging and parsing.
+Deep analytics.
+Named entity extraction.
+Co-reference resolution.
+</ul>
