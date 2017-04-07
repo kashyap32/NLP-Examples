@@ -21,7 +21,8 @@ Summarize blocks of text using Summarizer to extract the most important and cent
 </ul>
 
 
-## These are Examples of some basics to Advance Natural language Processing!!
+## These are the some Examples of some basics to Advance Natural language Processing!!
+## Coming soon for all modules!! will update daily (1 day commit challange :P)
 
 Require: Python
 
