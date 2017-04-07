@@ -14,8 +14,11 @@ Summarize blocks of text using Summarizer to extract the most important and cent
 <h1>Common NLP tasks in software programs today include:</h1>
 
 <ul>
-Sentence segmentation, part-of-speech tagging and parsing.
-Deep analytics.
-Named entity extraction.
-Co-reference resolution.
+<li>Sentence segmentation, part-of-speech tagging and parsing.</li>
+<li>Deep analytics.</li>
+<li>Named entity extraction.</li>
+<li>Co-reference resolution.</li>
 </ul>
+
+
+## These are Examples of some basics to Advance Natural language Processing!!
