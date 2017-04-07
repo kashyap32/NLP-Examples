@@ -25,5 +25,5 @@ Summarize blocks of text using Summarizer to extract the most important and cent
 
 Require: Python
 
-<!DOCTYPE html> <html> <head>  </head> <body>  <div id="myDIV" class="header">   <h2 style="margin:5px">My To Do List</h2>   </div>  <ul id="myUL">   <li>Python libraries compersion</li>   <li class="checked">python 3 support</li>   
+<!DOCTYPE html> <html> <head>  </head> <body>  <div id="myDIV" class="header">   <h2 style="margin:5px">My To Do List</h2>   </div>  <ul id="myUL">   <li>Python libraries comparison</li>   <li class="checked">python 3 support</li>   
 <li>Deep Learning</li>   <li>WE </li>   <li>OWN trainer</li>   </ul>    </body> </html>
