@@ -10,27 +10,27 @@ background_corpus.dictionary.save(
     "my_dict.dict")
 
 MmCorpus.serialize("background_corpus.mm",
-    background_corpus)  #  Uses numpy to persist wiki corpus in Matrix Market format. File will be several GBs.
+    background_corpus) 
 
 from gensim.corpora import WikiCorpus, wikicorpus
 
-articles = "enwiki-latest-pages-articles.xml.bz2"  # available from http://en.wikipedia.org/wiki/Wikipedia:Database_download
+articles = "enwiki-latest-pages-articles.xml.bz2" 
 
 wiki_corpus = WikiCorpus(articles)
 wiki_corpus.dictionary.save("wiki_dict.dict")
 
-MmCorpus.serialize("wiki_corpus.mm", wiki_corpus)  #  File will be several GBs.
+MmCorpus.serialize("wiki_corpus.mm", wiki_corpus) 
 
-bow_corpus = MmCorpus("wiki_corpus.mm")  # Revive a corpus
+bow_corpus = MmCorpus("wiki_corpus.mm") 
 
-dictionary = Dictionary.load("wiki_dict.dict")  # Load a dictionary
+dictionary = Dictionary.load("wiki_dict.dict")  
 
 from gensim.models import LsiModel, LogEntropyModel
 
 logent_transformation = LogEntropyModel(wiki_corpus,
-    id2word=dictionary)  # Log Entropy weights frequencies of all document features in the corpus
+    id2word=dictionary) 
 
-tokenize_func = wikicorpus.tokenize  # The tokenizer used to create the Wikipedia corpus
+tokenize_func = wikicorpus.tokenize  
 document = "Some text to be transformed."
 
 bow_document = dictionary.doc2bow(tokenize_func(
@@ -38,14 +38,11 @@ bow_document = dictionary.doc2bow(tokenize_func(
 logent_document = logent_transformation[[
     bow_document]]
 
-# Transform arbitrary documents by getting them into the same BOW vector space created by your training corpus
 documents = ["Some iterable", "containing multiple", "documents", "..."]
 bow_documents = (dictionary.doc2bow(
-    tokenize_func(document)) for document in documents)  # use a generator expression because...
+    tokenize_func(document)) for document in documents) 
 logent_documents = logent_transformation[
-                   bow_documents]  # ...transformation is done during iteration of documents using generators, so this uses constant memory
-
-
+                   bow_documents] 
 logent_corpus = MmCorpus(corpus=logent_transformation[bow_corpus])
 
 lsi_transformation = LsiModel(corpus=logent_corpus, id2word=dictionary,
