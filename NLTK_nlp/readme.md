@@ -1,10 +1,15 @@
 ## NLTK
 NLTK is intended to support research and teaching in NLP or closely related areas, including empirical linguistics, cognitive science, artificial intelligence, information retrieval, and machine learning.NLTK is the most famous Python Natural Language Processing Toolkit,
 
+
 Install Setuptools: http://pypi.python.org/pypi/setuptools
+
 Install Pip: run sudo easy_install pip
+
 Install Numpy (optional): run sudo pip install -U numpy
+
 Install PyYAML and NLTK: run sudo pip install -U pyyaml nltk
+
 Test installation: run python then type import nltk
 
 
