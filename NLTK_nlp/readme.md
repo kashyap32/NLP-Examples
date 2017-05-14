@@ -17,6 +17,7 @@ The simplest way to install NLTK Data is run the Python interpreter and type the
 [GCC 4.2.1 Compatible Apple Clang 4.0 (tags/Apple/clang-418.0.60)] on darwin
 Type “help”, “copyright”, “credits” or “license” for more information.
 >>> import nltk
+
 >>> nltk.download()
 
 
