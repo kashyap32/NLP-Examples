@@ -11,7 +11,7 @@ Fastest in the world --  It's written from the ground up in carefully memory-man
 Deep learning -- spaCy is the best way to prepare text for deep learning 
 
 
-##Some awesome features
+## Some awesome features
 
 
 
